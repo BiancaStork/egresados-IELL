@@ -413,5 +413,25 @@ img.responsive-gif {
     max-width: 100px; /* Más pequeño en móviles */
   }
 }
+.video-container {
+  position: relative;
+  width: 100%;
+  max-width: 1920px; /* o el máximo que quieras en pantallas grandes */
+  margin: 0 auto;
+  aspect-ratio: 16 / 9; /* Mantiene la proporción */
+}
+#player {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 600px) {
+  .video-container {
+    max-width: 100%;
+  }
+}
 
 

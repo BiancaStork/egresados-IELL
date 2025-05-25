@@ -28,7 +28,7 @@
 <body>
   <!--Musica-->
   <audio id="musica" loop>
-  <source src="resources/Chris_Brown_-_With_You.mp3" type="audio/mpeg">
+  <source src="resources/- STRLGHT - Dangerous Thing.mp3" type="audio/mpeg">
   Tu navegador no soporta el elemento de audio.
 </audio>
  <!-- Botón fijo para pausar/reproducir (oculto inicialmente) -->
@@ -190,7 +190,7 @@
 
 <!--seccion Video-->
 <!-- Contenedor donde se incrustará el video -->
-<div class="container mb-4">
+<div class="video-container mb-4">
   <div class="row justify-content-center">
     <div class="col-12 col-md-8 col-lg-6">
       <div class="ratio ratio-16x9" id="player-container">
@@ -336,7 +336,7 @@
 
     btnIngresar.addEventListener('click', () => {
       // Reproducir música
-      audio.volume = 0.1; // volumen bajo (10%)
+      audio.volume = 0.3; // volumen bajo (10%)
       audio.play().then(() => {
       isPlaying = true;
       btnPlayPause.innerHTML = '&#10074;&#10074;'; // Ícono pausa ||

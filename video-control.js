@@ -9,8 +9,8 @@
 
   window.onYouTubeIframeAPIReady = function() {
     player = new YT.Player('player', {
-      height: '360',
-      width: '640',
+      height: '100%',
+      width: '100%',
       videoId: 'VDOl1p7ulzM', // Cambia por tu ID
       playerVars: {
         autoplay: 0,
@@ -35,6 +35,7 @@
   if (!musica) return;
 
   if (event.data === YT.PlayerState.PLAYING) {
+    player.setVolume(40); // Baja el volumen del video al 30%
     // Pausa el audio cuando el video se reproduce
     if (!musica.paused) musica.pause();
   } else if (event.data === YT.PlayerState.PAUSED || event.data === YT.PlayerState.ENDED) {
