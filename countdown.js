@@ -35,7 +35,7 @@ function startCountdown(eventDateStr, countdownElementId) {
           <div class="label">Segundos</div>
         </div>
         <div class="countdown-finished-text">
-          ¡EVENTO FINALIZADO!
+          ¡ EVENTO FINALIZADO !
         </div>
       `;
 
@@ -73,7 +73,7 @@ function startCountdown(eventDateStr, countdownElementId) {
           <div class="label">Segundos</div>
         </div>
         <div class="countdown-today-text">
-          ¡ES HOY!
+          ¡ ES HOY !
         </div>
       `;
       return;

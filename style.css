@@ -192,7 +192,7 @@ header img {
 
 .nombre-text-personaliz {
   font-family: "Bebas Neue", sans-serif;
-  font-size: 5rem;         /* Puedes ajustar el tamaño */
+  font-size: 6rem;         /* Puedes ajustar el tamaño */
   font-weight: 400;          /* Great Vibes solo tiene un peso */
   /*color: #181717;            Un color elegante, puedes cambiarlo*/
   letter-spacing: 0.04em;
@@ -265,18 +265,22 @@ header img {
   text-align: center;
   margin-bottom: 1rem;
   animation: blink 1s step-start infinite;
-  color: whitesmoke;
+  color:red;
   font-weight: bold;
-  font-size: 1rem;
+  font-size: 1.2rem;
+  /* Sombra para resaltar el texto */
+ text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.836);
 }
 .countdown-today-text{
   flex-basis: 100%;   /* Ocupa toda la fila */
   text-align: center;
   margin-bottom: 1rem;
   animation: blink 1s step-start infinite;
-  color: whitesmoke;
+  color:red;
   font-weight: bold;
   font-size: 1.5rem;
+  /* Sombra para resaltar el texto */
+ text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.836);
 }
 
 
@@ -413,7 +417,7 @@ img.responsive-gif {
     max-width: 100px; /* Más pequeño en móviles */
   }
 }
-@media (max-width: 576px) { /* pantallas pequeñas, móviles */
+@media (max-width: 540px) { /* pantallas pequeñas, móviles */
   img.img-fluid.w-100 {
     transform: scale(1.1); /* aumenta un 10% */
     transform-origin: center center; /* zoom desde el centro */
