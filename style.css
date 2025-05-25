@@ -369,7 +369,7 @@ header img {
 @media (max-width: 768px) {
   .countdown-card {
     min-width: 100px;       /* Cards un poco más anchas */
-    padding: 0.8rem 0.5rem;   /* Más padding para que se vean más grandes */
+    padding: 0.2rem 0.2rem;   /* Más padding para que se vean más grandes */
     margin: 0 0.1rem;       /* Menos espacio horizontal entre cards */
   }
 
