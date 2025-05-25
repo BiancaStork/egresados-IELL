@@ -4,6 +4,12 @@
     padding: 0;
     box-sizing: border-box;
   }
+
+  html, body {
+  margin: 0;
+  padding: 0;
+}
+
         
 /* Estilos generales */
 body {
@@ -87,15 +93,16 @@ header img {
 }
 /*Carrusel */
 .swiper {
-      width: 100%;
+      width: 100vw;
       /* max-width: 900px; */
-      margin: auto;
+      margin: 0;
+      padding: 0;
     }
     .swiper-slide img {
       width: 100%;
-      /* border-radius: 8px; */
+      border-radius: 8px;
       object-fit: contain;
-      object-position: top;
+      object-position: center;
       height: 400px;
     }
     /* Quita el filtro que aplica el color azul */
@@ -199,19 +206,7 @@ header img {
   }
 }
 
-.card {
-  border-radius: 15px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-}
-.card {
-  background: rgb(241, 241, 238);
-  color: #2c3e50; /* texto oscuro para buen contraste */
-}
+
 
 
 #countdown {
@@ -405,4 +400,5 @@ img.responsive-gif {
     max-width: 100px; /* Más pequeño en móviles */
   }
 }
+
 

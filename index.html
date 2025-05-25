@@ -27,7 +27,7 @@
 <body>
   <!--Musica-->
   <audio id="musica" loop>
-  <source src="resources/musica.mp3" type="audio/mpeg">
+  <source src="resources/Rosa Linn - SNAP.mp3" type="audio/mpeg">
   Tu navegador no soporta el elemento de audio.
 </audio>
  <!-- Botón fijo para pausar/reproducir (oculto inicialmente) -->
@@ -139,11 +139,36 @@
     
   </a>
 </div>
+</div>
+</section>
+
+<div class="line"></div>
+<section >
+<div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+    
+      <div class="swiper-slide"><img src="assets/vs/IMG_8988.jpg" alt="Imagen 1" /></div>
+      <div class="swiper-slide"><img src="assets/vs/IMG_8989.jpg" alt="Imagen 2" /></div>
+      <div class="swiper-slide"><img src="assets/vs/IMG_9202.jpg" alt="Imagen 3" /></div>
+      <div class="swiper-slide"><img src="assets/vs/IMG_9203.jpg" alt="Imagen 4" /></div>
+      <div class="swiper-slide"><img src="assets/vs/IMG_9335.jpg" alt="Imagen 5" /></div>
+      <div class="swiper-slide"><img src="assets/vs/IMG_9336.jpg" alt="Imagen 6" /></div>
+      <div class="swiper-slide"><img src="assets/vs/IMG_9385.jpg" alt="Imagen 7" /></div>
+      <div class="swiper-slide"><img src="assets/vs/IMG_9388.jpg" alt="Imagen 8" /></div>
+      <div class="swiper-slide"><img src="assets/vs/IMG_9425.jpg" alt="Imagen 9" /></div>
+      <div class="swiper-slide"><img src="assets/vs/IMG_9424.jpg" alt="Imagen 10" /></div>
+      <div class="swiper-slide"><img src="assets/vs/IMG_9423.jpg" alt="Imagen 11" /></div>
+      <div class="swiper-slide"><img src="assets/vs/IMG_9403.jpg" alt="Imagen 12" /></div>
+      <div class="swiper-slide"><img src="assets/vs/IMG_9401.jpg" alt="Imagen 13" /></div>
+      <div class="swiper-slide"><img src="assets/vs/IMG_9400.jpg" alt="Imagen 14" /></div>
+      <div class="swiper-slide"><img src="assets/vs/IMG_9396.jpg" alt="Imagen 15" /></div>
+      <div class="swiper-slide"><img src="assets/vs/IMG_9390.jpg" alt="Imagen 16" /></div>
+    </div>
+
+</section>
 <!-- Mensaje de invitación -->
 <section class="text-container" style="background-color:rgb(149, 150, 151); color: white;">
   <p class="fs-6 fs-lg-3">"No es un adiós, es un hasta pronto !"</p>
-</section>
-
 </section>
 <!-- <div class="line"></div> -->
 <section id="salon" class="w-100 text-center mb-4">
@@ -188,19 +213,26 @@
   <p class="fs-6 fs-lg-3">"Cada sonrisa, cada lágrima y cada logro nos hicieron fuertes. Celebremos juntos esta victoria."
   </p>
 </section>
- 
+
+
 
 <!--Carrousel imagenes-->
 <section >
 <div class="swiper mySwiper">
     <div class="swiper-wrapper">
-    
-      <div class="swiper-slide"><img src="assets/foto8.jpg" alt="Imagen 1" /></div>
-      <div class="swiper-slide"><img src="assets/foto9.jpg" alt="Imagen 2" /></div>
-      <div class="swiper-slide"><img src="assets/foto10.jpg" alt="Imagen 3" /></div>
-      <div class="swiper-slide"><img src="assets/foto1.jpg" alt="Imagen 4" /></div>
-      <div class="swiper-slide"><img src="assets/foto2.jpg" alt="Imagen 5" /></div>
-      <div class="swiper-slide"><img src="assets/foto3.jpg" alt="Imagen 6" /></div>
+     <div class="swiper-slide"><img src="assets/vert/IMG_8370.jpg" alt="Imagen 1" /></div>
+      <div class="swiper-slide"><img src="assets/vert/IMG_8373.jpg" alt="Imagen 2" /></div>
+       <div class="swiper-slide"><img src="assets/vert/IMG_8422.jpg" alt="Imagen 3" /></div>
+      <div class="swiper-slide"><img src="assets/vert/IMG_8632.jpg" alt="Imagen 4" /></div>
+      <div class="swiper-slide"><img src="assets/vert/IMG_9038.jpg" alt="Imagen 5" /></div>
+      <div class="swiper-slide"><img src="assets/vert/IMG_9039.jpg" alt="Imagen 6" /></div>
+       <div class="swiper-slide"><img src="assets/vert/IMG_9167.jpg" alt="Imagen 7" /></div>
+      <div class="swiper-slide"><img src="assets/vert/IMG_9168.jpg" alt="Imagen 8" /></div>
+      <div class="swiper-slide"><img src="assets/vert/IMG_9169.jpg" alt="Imagen 9" /></div>
+      <div class="swiper-slide"><img src="assets/vert/IMG_9201.jpg" alt="Imagen 10" /></div>
+      <div class="swiper-slide"><img src="assets/vert/IMG_9293.jpg" alt="Imagen 11" /></div>
+       <div class="swiper-slide"><img src="assets/vert/IMG_9296.jpg" alt="Imagen 12" /></div>
+      <div class="swiper-slide"><img src="assets/vert/IMG_9380.jpg" alt="Imagen 13" /></div>
     </div>
     
     <!-- Paginación -->
@@ -277,10 +309,10 @@
   <script>
     const swiper = new Swiper('.mySwiper', {
       slidesPerView: 4,      // Número de imágenes visibles
-      spaceBetween: 0,      // Espacio entre imágenes en px
+      spaceBetween: 5,      // Espacio entre imágenes en px
       loop: true,
       autoplay: {
-      delay: 2000,        // Tiempo entre slides en milisegundos (3 segundos)
+      delay: 1000,        // Tiempo entre slides en milisegundos (3 segundos)
       disableOnInteraction: false, // No desactiva autoplay si el usuario interactúa
     },
       navigation: {
@@ -294,19 +326,19 @@
       breakpoints: {
         320: {
           slidesPerView: 1,
-          spaceBetween: 0,
+          spaceBetween: 5,
         },
         576: {
           slidesPerView: 2,
-          spaceBetween: 0,
+          spaceBetween: 5,
         },
         768: {
           slidesPerView: 3,
-          spaceBetween: 0,
+          spaceBetween: 5,
         },
         992: {
           slidesPerView: 4,
-          spaceBetween: 0,
+          spaceBetween: 5,
         },
       },
     });
