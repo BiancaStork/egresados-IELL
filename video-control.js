@@ -30,15 +30,15 @@
     // Opcional: código al cargar el reproductor
   }
 
-  function onPlayerStateChange(event) {
-    const musica = document.getElementById('musica');
-    if (!musica) return;
+ function onPlayerStateChange(event) {
+  const musica = document.getElementById('musica');
+  if (!musica) return;
 
-    if (event.data === YT.PlayerState.PLAYING) {
-      musica.volume = 0; /* 0.20 - baja el volumen 20%*/
-      if (musica.paused) musica.play();
-    } else if (event.data === YT.PlayerState.PAUSED || event.data === YT.PlayerState.ENDED) {
-      musica.volume = 0.3;
-      if (musica.paused) musica.play();
-    }
+  if (event.data === YT.PlayerState.PLAYING) {
+    // Pausa el audio cuando el video se reproduce
+    if (!musica.paused) musica.pause();
+  } else if (event.data === YT.PlayerState.PAUSED || event.data === YT.PlayerState.ENDED) {
+    // Reproduce el audio cuando el video se pausa o termina
+    if (musica.paused) musica.play();
   }
+}
