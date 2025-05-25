@@ -9,7 +9,7 @@
 body {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
-  color: black; /* color base, puedes cambiar */
+  color:#2c3e50; /* color base, puedes cambiar */
   line-height: 1.6;
   
 }
@@ -187,7 +187,7 @@ header img {
   font-family: 'Great Vibes', cursive;
   font-size: 5rem;         /* Puedes ajustar el tamaño */
   font-weight: 400;          /* Great Vibes solo tiene un peso */
-  color: #181717;            /* Un color elegante, puedes cambiarlo */
+  /*color: #181717;            Un color elegante, puedes cambiarlo*/
   letter-spacing: 0.04em;
   display: inline-block;
   vertical-align: middle;
@@ -197,6 +197,20 @@ header img {
   .nombre-text-personaliz {
     font-size: 2.8rem;    /* Tamaño reducido para móviles */
   }
+}
+
+.card {
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+.card {
+  background: rgb(241, 241, 238);
+  color: #2c3e50; /* texto oscuro para buen contraste */
 }
 
 
@@ -221,7 +235,7 @@ header img {
   /* border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1); */
   /* background-color:#fdcae1; color de fondo */
-  color: #4a4a4a;
+  color: whitesmoke;
   user-select: none;
   transition: transform 0.3s ease;
 }
@@ -256,7 +270,7 @@ header img {
   text-align: center;
   margin-bottom: 1rem;
   animation: blink 1s step-start infinite;
-  color: #484b77;
+  color: whitesmoke;
   font-weight: bold;
   font-size: 1rem;
 }
@@ -265,7 +279,7 @@ header img {
   text-align: center;
   margin-bottom: 1rem;
   animation: blink 1s step-start infinite;
-  color: #e4426a;
+  color: whitesmoke;
   font-weight: bold;
   font-size: 1.5rem;
 }
