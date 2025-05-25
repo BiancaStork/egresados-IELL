@@ -383,7 +383,7 @@ header img {
 
   /* Si usas flexbox en el contenedor, controla el gap así: */
   #countdown {
-    gap: 0.8rem;            /* Reduce el espacio entre cards */
+    gap: 0.1rem;            /* Reduce el espacio entre cards */
   }
 }
 
