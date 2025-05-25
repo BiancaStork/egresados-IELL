@@ -191,7 +191,7 @@ header img {
 }
 
 .nombre-text-personaliz {
-  font-family: 'Great Vibes', cursive;
+  font-family: "Bebas Neue", sans-serif;
   font-size: 5rem;         /* Puedes ajustar el tamaño */
   font-weight: 400;          /* Great Vibes solo tiene un peso */
   /*color: #181717;            Un color elegante, puedes cambiarlo*/
@@ -388,6 +388,17 @@ header img {
     margin: 0;
   }
 }
+
+@media (max-width: 480px) {
+  .countdown-card {
+    min-width: 80px; /* o un valor menor para que quepan */
+    padding: 0.8rem 0.5rem;
+  }
+  .countdown-card span {
+    font-size: 1.8rem; /* reducir tamaño de número para que quepa mejor */
+  }
+}
+
 
 img.responsive-gif {
   width: 100%;
