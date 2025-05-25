@@ -58,9 +58,9 @@
 <!-- Header con foto y nombre -->
  <header >
   <img src="assets/hero-bg.jpg" class="img-fluid w-100" alt="header">
-  <div class="text-center mt-5">
-    <h1 class="nombre-text-personaliz">Egresados 2024</h1>
-    <p class="lead" style="font-style: italic;">INSTITUTO EDUCATIVO LOS LAPACHOS</p>
+  <div class="text-center mt-5 text-personaliz">
+    <h1 class=" nombre-text-personaliz">Egresados 2024</h1>
+    <p class="fs-6 fs-lg-3 fst-italic text-center"><strong> INSTITUTO EDUCATIVO LOS LAPACHOS</strong></p>
   </div>
 </header>
 
@@ -116,7 +116,7 @@
 <!-- Mensaje de invitación -->
 <section class="text-container" style="background-color: #cae4fd; color: rgb(71, 71, 71);">
  
-  <p class="fs-5 fs-lg-3">
+  <p class="fs-6 fs-lg-3">
     <br>
     <br>
     ¡Esta noche es nuestra, el momento perfecto para brillar y festejar como nunca antes!
@@ -128,15 +128,15 @@
 <!-- Datos del evento -->
 <section id="fecha" class="w-100 text-center mt-4 mb-4">
    <br>
-   <h4 class="fs-5 fs-lg-3">ACTO COLACION | ENTREGA DE DIPLOMAS</h4>
+   <h4 class="fs-6 fs-lg-4">ACTO COLACION | ENTREGA DE DIPLOMAS</h4>
    <i class="bi bi-mortarboard-fill fs-1"></i>
-   <p class="fs-5 fs-lg-3" >17 DICIEMBRE 2024 </p>
-   <p class="fs-5 fs-lg-3" >| 19:00 HS |</p>
+   <p class="fs-6 fs-lg-4" >17 DICIEMBRE 2024 <br>
+                             | 19:00 HS |</p>
  <!-- Nombre del salón ACTO y dirección -->
   <div style="margin-bottom: 15px;">
-    <br>
-    <p class="fs-5 fs-lg-3" style="margin: 0;">INSTITUTO EDUCATIVO LOS LAPACHOS</p>
-    <p class="fs-5 fs-lg-3" style="font-size: 14px; margin-top: 5px; margin-bottom: 0;">Av. San Martín, N3378 Puerto Esperanza, Misiones</p>
+    <h6 class="fs*6 fs-lg-4">Donde?</h6>
+    <p class="fs-6 fs-lg-4" style="margin: 0;">INSTITUTO EDUCATIVO LOS LAPACHOS</p>
+    <p class="fs-6 fs-lg-4" style="font-size: 14px; margin-top: 5px; margin-bottom: 0;">Av. San Martín, N3378 Puerto Esperanza, Misiones</p>
     <!-- Icono y botón en la misma línea -->
   <div style="display: flex; align-items: center; justify-content: center;">
   <a href="https://maps.app.goo.gl/pCbctE8p1LxMithn8" target="_blank" class="btn" style="display: flex; align-items: center; gap: 0; margin-left: 1px; margin-top: 5px; padding: 0;">
@@ -184,20 +184,23 @@
 
 <!--seccion Video-->
 <!-- Contenedor donde se incrustará el video -->
-<div class="container">
-  <div class="row justify-content-center ">
+<div class="container mb-4">
+  <div class="row justify-content-center">
     <div class="col-12 col-md-8 col-lg-6">
-      <div id="player" class="embed-responsive embed-responsive-16by9"></div>
+      <div class="ratio ratio-16x9" id="player-container">
+        <div id="player"></div>
+      </div>
     </div>
   </div>
 </div>
+
 
 <!-- Mensaje de invitación -->
 <section class="text-container" style="background-color: #cae4fd; color: rgb(71, 71, 71);">
   <p class="fs-5 fs-lg-3">
     <br>
     <br>
-    "Cada sonrisa, cada lágrima y cada logro nos hicieron fuertes. Ahora celebremos juntos esta victoria."
+    "Cada sonrisa, cada lágrima y cada logro nos hicieron fuertes. Celebremos juntos esta victoria."
     <br>
     <br>
   </p>
@@ -248,7 +251,7 @@
 <script src="countdown.js"></script>
 <script>
   // Iniciar la cuenta regresiva con la fecha y el id del contenedor
-  startCountdown('2024-12-21T21:00:00', 'countdown');
+  startCountdown('2025-05-25T21:00:00', 'countdown');
 </script>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>

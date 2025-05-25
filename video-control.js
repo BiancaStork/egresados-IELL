@@ -35,10 +35,10 @@
     if (!musica) return;
 
     if (event.data === YT.PlayerState.PLAYING) {
-      musica.volume = 0.2; /* baja el volumen 20%*/
+      musica.volume = 0; /* 0.20 - baja el volumen 20%*/
       if (musica.paused) musica.play();
     } else if (event.data === YT.PlayerState.PAUSED || event.data === YT.PlayerState.ENDED) {
-      musica.volume = 1;
+      musica.volume = 0.3;
       if (musica.paused) musica.play();
     }
   }
