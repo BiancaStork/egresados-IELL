@@ -164,6 +164,7 @@ header img {
 }
 
 
+
 #btnPlayPause {
    position: fixed;
             top: 50%;
@@ -470,3 +471,10 @@ img.responsive-gif {
 }
 
 
+#loader {
+  transition: opacity 0.5s;
+}
+#loader.hide {
+  opacity: 0;
+  pointer-events: none;
+}
