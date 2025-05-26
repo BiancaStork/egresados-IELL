@@ -18,6 +18,9 @@ function startCountdown(eventDateStr, countdownElementId) {
     if (now > eventDate && !isSameDay(now, eventDate)) {
       // Evento finalizado (fecha pasada y no es el mismo día)
       countdown.innerHTML = `
+      <div class="countdown-finished-text">
+          ¡ EVENTO FINALIZADO !
+        </div>
         <div class="countdown-card">
           <span>00</span>
           <div class="label">Días</div>
@@ -34,9 +37,7 @@ function startCountdown(eventDateStr, countdownElementId) {
           <span>00</span>
           <div class="label">Segundos</div>
         </div>
-        <div class="countdown-finished-text">
-          ¡ EVENTO FINALIZADO !
-        </div>
+        
       `;
 
       clearInterval(intervalId);
@@ -56,6 +57,9 @@ function startCountdown(eventDateStr, countdownElementId) {
       const seconds = Math.floor((diff / 1000) % 60);
 
       countdown.innerHTML = `
+         <div class="countdown-today-text">
+          ¡ ES HOY !
+        </div>
         <div class="countdown-card">
           <span>00</span>
           <div class="label">Días</div>
@@ -72,9 +76,7 @@ function startCountdown(eventDateStr, countdownElementId) {
           <span>${pad(seconds)}</span>
           <div class="label">Segundos</div>
         </div>
-        <div class="countdown-today-text">
-          ¡ ES HOY !
-        </div>
+     
       `;
       return;
     }
