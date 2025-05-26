@@ -140,8 +140,8 @@ header img {
   max-width: 300px;      /* Máximo ancho para que no sea muy grande */
   padding-left: 1.5rem;  /* Ajustá padding para que quede lindo */
   padding-right: 1.5rem;
-  background-color: transparent; /* Sin fondo */
-  color: #3f3d3d;                /* Color del texto (gris oscuro Bootstrap) */
+  background-color:#2C7E87; /*transparent / Sin fondo */
+  color: white;                /* Color del texto (gris oscuro Bootstrap) */
   border-left: none !important;
   border-right: none !important;
   border-top: none !important;;    /* Línea arriba con color del texto */
@@ -154,8 +154,35 @@ header img {
 
 .btn:hover, 
 .btn:focus {
- background-color: transparent; /* Sin fondo */
-  color: #1176fa;                 /* Color texto al pasar mouse */
+ background-color: #36929B; /* transparent --> Sin fondo */
+  color: white;                 /* Color texto al pasar mouse */
+  box-shadow: none;              /* Sin sombra */
+  border-left: none !important;
+  border-right: none !important;
+  /* border-top: 1px solid currentColor; */
+  /* border-bottom: 1px solid currentColor; */
+}
+.btn1 {
+   width: auto;           /* Ancho automático según contenido */
+  max-width: 300px;      /* Máximo ancho para que no sea muy grande */
+  padding-left: 1.5rem;  /* Ajustá padding para que quede lindo */
+  padding-right: 1.5rem;
+  background-color:transarent; /*transparent / Sin fondo */
+  color: rgb(41, 40, 40);                /* Color del texto (gris oscuro Bootstrap) */
+  border-left: none !important;
+  border-right: none !important;
+  border-top: none !important;;    /* Línea arriba con color del texto */
+  border-bottom: none !important;; /*Línea abajo con color del texto
+  border-radius: 0;
+  padding-top: 0.375rem;
+  padding-bottom: 0.375rem;
+  box-shadow: none; /* Quita sombra si la tuviera */
+}
+
+.btn1:hover, 
+.btn1:focus {
+ background-color: transparent; /* transparent --> Sin fondo */
+  color: rgb(41, 40, 40);   
   box-shadow: none;              /* Sin sombra */
   border-left: none !important;
   border-right: none !important;
@@ -470,7 +497,6 @@ img.responsive-gif {
   height: 100%;
 }
 
-
 #loader {
   transition: opacity 0.5s;
 }
@@ -478,3 +504,4 @@ img.responsive-gif {
   opacity: 0;
   pointer-events: none;
 }
+

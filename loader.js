@@ -1,30 +1,19 @@
-document.addEventListener('DOMContentLoaded', function () {
-  const btnIngresar = document.getElementById('btnIngresar');
-  const welcomeScreen = document.getElementById('welcome-screen');
-  const loader = document.getElementById('loader');
-  const invitation = document.getElementById('invitation');
+// Mostrar loader al hacer click en Ingresar
+document.getElementById('btnIngresar').addEventListener('click', function () {
+  // Oculta el modal de bienvenida (ya lo hacés)
+  // Muestra el loader
+  document.getElementById('loader').style.display = 'flex';
+  
+  // Opcional: puedes ocultar el contenido principal aquí si quieres
+  // document.body.classList.add('oculto'); // si tienes una clase oculto
+});
 
-  btnIngresar.addEventListener('click', function () {
-    // Ocultar pantalla de bienvenida
-    welcomeScreen.style.display = 'none';
-
-    // Mostrar loader
-    loader.style.display = 'flex';
-
-    // Si la página ya está cargada completamente
-    if (document.readyState === 'complete') {
-      mostrarInvitacion();
-    } else {
-      // Esperar a que carguen todos los recursos
-      window.addEventListener('load', mostrarInvitacion);
-    }
-  });
-
-  function mostrarInvitacion() {
-    // Ocultar loader
-    loader.style.display = 'none';
-
-    // Mostrar contenido principal
-    invitation.style.display = 'block';
-  }
+// Cuando TODOS los recursos hayan cargado, ocultar el loader
+window.addEventListener('load', function () {
+  // Oculta el loader con transición
+  document.getElementById('loader').classList.add('hide');
+  setTimeout(() => {
+    document.getElementById('loader').style.display = 'none';
+    // document.body.classList.remove('oculto'); // muestra el contenido principal si lo ocultaste antes
+  }, 500); // Espera a que termine la transición
 });
