@@ -35,6 +35,14 @@ header {
   width: 200px;                  /* ancho de la línea */
   margin: 0 auto 1rem auto;      /* centrado y margen inferior */
 }
+.resaltado {
+  background-color:#6bb3b9; /* color coral suave de la paleta */
+  color: white;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
 
 
 section.container-fluid {
@@ -182,7 +190,7 @@ header img {
 .btn1:hover, 
 .btn1:focus {
  background-color: transparent; /* transparent --> Sin fondo */
-  color: rgb(41, 40, 40);   
+  color: white;                 /* Color texto al pasar mouse */
   box-shadow: none;              /* Sin sombra */
   border-left: none !important;
   border-right: none !important;
@@ -197,7 +205,7 @@ header img {
             top: 50%;
             right: 10px;
             transform: translateY(-50%);
-            background-color: #adadad;
+            background-color: 	#6bb3b9;
             border: none;
             border-radius: 50%;
             width: 50px;
