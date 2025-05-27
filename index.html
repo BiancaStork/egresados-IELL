@@ -41,10 +41,24 @@
   <source src="resources/- STRLGHT - Dangerous Thing.mp3" type="audio/mpeg">
   Tu navegador no soporta el elemento de audio.
 </audio>
- <!-- Botón fijo para pausar/reproducir (oculto inicialmente) -->
-  <button id="btnPlayPause" title="Pausar/Reproducir música" >
+<!--Btnes control musica / panel bienvenida-->
+<div id="btnContainer" style="
+  position: fixed;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  z-index: 1000;
+">
+  <button id="btnPlayPause" style="background-color: #6bb3b9; border: none; border-radius: 50%; width: 30px; height: 30px; color: white; font-size: 14px; cursor: pointer; box-shadow: 0 2px 5px rgba(0,0,0,0.3); display: none;">
     &#9658;
   </button>
+  <button id="btnVolverBienvenida" style="background-color: #6bb3b9; border: none; border-radius: 50%; width: 30px; height: 30px; color: white; font-size: 18px; cursor: pointer; box-shadow: 0 2px 5px rgba(0,0,0,0.3); display: none;">
+    <i class="bi bi-house-door"></i>
+  </button>
+</div>
 
 
 <!-- Modal de bienvenida -->
@@ -53,10 +67,7 @@
 <div class="modal-content d-flex p-0 " style="flex-direction: row; padding: 0;"> <!-- flex container, sin padding para que la imagen ocupe todo -->      
  <!-- Sección izquierda: texto y botón -->
  <div class="modal-left" style="color: rgb(36, 35, 32);">
-   <!-- <i class="bi bi-mortarboard-fill fs-1"></i> -->
-    <!-- <img src="/resources/AdobeStock_802368967_Preview.jpeg" class="img-fluid w-100"> -->
-     
-  <h4 class="mb-1" >EGRESADOS 2024| INST. LOS LAPACHOS </h4>
+ <h4 class="mb-1" >EGRESADOS 2024| INST. LOS LAPACHOS </h4>
   <img src="resources/gorro-egresado-linea.png"  style="display: block; margin: 0 auto; width: 80%; height: auto; filter: invert(20%) sepia(100%) saturate(300%) hue-rotate(450deg);"><br>
   <p class="fs-6">¡VEN A VIVIR CONMIGO LA NOCHE QUE MARCARA EL FIN DE UNA ETAPA Y EL COMIENZO DE UN SUEÑO!</p>
  
@@ -69,7 +80,6 @@
 </div>
 </div>
 </div>
-
 <!-- Header con foto y nombre -->
  <header >
   <img src="assets/hero-bg.jpg" class="img-fluid w-100" alt="header">
@@ -84,7 +94,6 @@
   <br>
   <div id="countdown"></div>
 </section>
-
 
 <!--Carrousel imagenes-->
 <section >
@@ -111,20 +120,27 @@
       <div class="swiper-slide"><img src="assets/ind/IMG_8785.jpg" alt="Imagen 19" /></div>
       <div class="swiper-slide"><img src="assets/ind/IMG_9096.jpg" alt="Imagen 20" /></div>
      </div>
+ <!-- Paginación -->
+    <div class="swiper-pagination"></div>
+
+    <!-- Botones de navegación -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+
 </section>
 
 <!-- Mensaje de invitación -->
 <section class="text-container mt-3" style="background-color:#2C7E87; color: white;">
- 
-  <p class="fs-4 fs-lg-1">No es un adiós, es un hasta pronto !</p>
+ <p class="fs-6 fs-lg-3">No es un adiós, es un hasta pronto !</p>
 </section>
 
 <!-- Datos del evento -->
 <section id="fecha" class="w-100 text-center mb-4">
-   <h4 class="fs-5 fs-lg-2">ACTO COLACION | ENTREGA DE DIPLOMAS</h4>
-   <img src="resources/gorro graduacion.png" alt="Icono animado" class="responsive-gif" 
+   <h4 class="fs-5 fs-lg-2">ACTO COLACION </h4>
+     <img src="resources/gorro graduacion.png" alt="Icono animado" class="" 
    style="width: 150px; height: auto; filter: invert(20%) sepia(100%) saturate(300%) hue-rotate(450deg);"">
-   
+    <br>
    <a class="fs-6 fs-lg-4 fw-bold" 
    style="color:#e754a0; text-shadow: 1px 1px 2px rgba(255, 250, 250, 0.856);text-decoration: none;"
     href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Acto+de+Colaci%C3%B3n+Los+Lapachos&dates=20241217T190000/20241217T200000&details=Acto+de+colaci%C3%B3n+Los+Lapachos&sf=true&output=xml"
@@ -151,8 +167,8 @@
 </div>
 </section>
 <!-- Mensaje de invitación -->
-<section class="text-container fs-4 fs-lg-1 mt-3" style="background-color:#2C7E87; color: white;">
-  <p class="bt-1 "> Porque juntos logramos lo imposible</p>
+<section class="text-container mt-3" style="background-color:#2C7E87; color: white;">
+  <p class="bt-1 fs-6 fs-lg-3"> Porque juntos logramos lo imposible</p>
 </section>
 <section >
 <div class="swiper mySwiper">
@@ -175,19 +191,27 @@
       <div class="swiper-slide"><img src="assets/vs/IMG_9396.jpg" alt="Imagen 15" /></div>
       <div class="swiper-slide"><img src="assets/vs/IMG_9390.jpg" alt="Imagen 16" /></div>
     </div>
+ <!-- Paginación -->
+    <div class="swiper-pagination"></div>
+
+    <!-- Botones de navegación -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
 
 </section>
 <!-- Mensaje de invitación -->
-<section class="text-container fs-4 fs-lg-1 mt-3" style="background-color:#2C7E87; color: white;">
-  <p class="bt-1 "> Ahora celebremos lo increíble.</p>
+<section class="text-container mt-3" style="background-color:#2C7E87; color: white;">
+  <p class="bt-1 fs-6 fs-lg-3"> Ahora celebremos lo increíble.</p>
 </section>
 
 
 <!-- Datos del evento -->
-<section id="fecha" class="w-100 text-center mb-4">
+<section id="fiesta" class="w-100 text-center mb-4">
    <h4 class="fs-5 fs-lg-2">FIESTA EGRESADOS</h4>
-   <img src="resources/discoball-estrellas.png" alt="Icono animado" class="responsive-gif" 
-   style="filter: invert(20%) sepia(100%) saturate(300%) hue-rotate(450deg); width: 80px; height: auto;">
+   <img src="resources/discoball-estrellas.png" alt="Icono animado" class="" 
+   style="filter: invert(20%) sepia(100%) saturate(300%) hue-rotate(450deg); width: 70px; height: auto;">
+   <br>
    <br>
    <a class="fs-6 fs-lg-4 fw-bold" 
    style="color:#e754a0; text-shadow: 1px 1px 2px rgba(255, 250, 250, 0.856);text-decoration: none;"
@@ -212,7 +236,7 @@
 </section>
 <!-- Mensaje de invitación -->
 <section class="text-container mt-0" style="background-color:#2C7E87; color: white;">
-  <p class="fs-5 fs-lg-2">"Cada sonrisa, cada lágrima y cada logro nos hicieron fuertes. Celebremos juntos esta victoria."
+  <p class="fs-6 fs-lg-3">"Cada sonrisa, cada lágrima y cada logro nos hicieron fuertes. Celebremos juntos esta victoria."
   </p>
 </section>
 <!-- <div class="line"></div> -->
@@ -230,31 +254,13 @@
 
 <!-- Mensaje de invitación -->
 <section class="text-container" style="background-color:#2C7E87; color: white;">
-  <p class="fs-5 fs-lg-2">"¡Esta noche es nuestra, el momento perfecto para brillar y festejar como nunca antes!"</p>
+  <p class="fs-6 fs-lg-3">"¡Esta noche es nuestra, el momento perfecto para brillar y festejar como nunca antes!"</p>
 </section>
 
-<!--Carrousel imagenes-->
-<section >
-<div class="swiper mySwiper">
-    <div class="swiper-wrapper">
-     <div class="swiper-slide"><img src="assets/vert/IMG_8370.jpg" alt="Imagen 1" /></div>
-      <div class="swiper-slide"><img src="assets/vert/IMG_8373.jpg" alt="Imagen 2" /></div>
-       <div class="swiper-slide"><img src="assets/vert/IMG_8422.jpg" alt="Imagen 3" /></div>
-      <div class="swiper-slide"><img src="assets/vert/IMG_8632.jpg" alt="Imagen 4" /></div>
-      <div class="swiper-slide"><img src="assets/vert/IMG_9038.jpg" alt="Imagen 5" /></div>
-      <div class="swiper-slide"><img src="assets/vert/IMG_9039.jpg" alt="Imagen 6" /></div>
-       <div class="swiper-slide"><img src="assets/vert/IMG_9167.jpg" alt="Imagen 7" /></div>
-      <div class="swiper-slide"><img src="assets/vert/IMG_9168.jpg" alt="Imagen 8" /></div>
-      <div class="swiper-slide"><img src="assets/vert/IMG_9169.jpg" alt="Imagen 9" /></div>
-      <div class="swiper-slide"><img src="assets/vert/IMG_9293.jpg" alt="Imagen 10" /></div>
-       <div class="swiper-slide"><img src="assets/vert/IMG_9296.jpg" alt="Imagen 11" /></div>
-      <div class="swiper-slide"><img src="assets/vert/IMG_9380.jpg" alt="Imagen 12" /></div>
-    </div>
-</section>
 
 <!-- Footer-->
 <section id="footer" class="text-container ">
-   <img src="/resources/gorro-diploma.png" style=" justify-content:center; width:350px; height: auto;">
+   <img src="resources/gorrodiploma.png" style=" justify-content:center; width:350px; height: auto;">
    <div class="line"></div>
      <p class="text-center" style="font-size: 14px;">| <i class="bi bi-c-circle"></i> faBianca | <strong style="color: #f31383;" >www.teinvitoa.com.ar</strong>  | Todos los derechos reservados |<strong style="color: #f31383;"> 2025</strong></p>
 </section>
@@ -266,31 +272,7 @@
   startCountdown('2024-12-21T21:00:00', 'countdown');
 </script>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-
-<script>
-  // Inicializar el toast de Bootstrap
-  const copyToastEl = document.getElementById('copyToast');
-  const copyToast = new bootstrap.Toast(copyToastEl);
-
-  function copyToClipboard(text) {
-    navigator.clipboard.writeText(text).then(() => {
-      copyToast.show();
-    }).catch(() => {
-      alert('Error al copiar al portapapeles');
-    });
-  }
-
-  // Ejemplo: copiar al hacer click en elementos con clase 'copy-text'
-  document.querySelectorAll('.copy-text').forEach(el => {
-    el.style.cursor = 'pointer';
-    el.setAttribute('title', 'Click para copiar');
-    el.addEventListener('click', () => {
-      copyToClipboard(el.textContent);
-    });
-  });
-</script>
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" defer></script>
 
 
 <!--Modal Bienvenida-->
@@ -303,6 +285,21 @@
       welcomeModal.hide();
     });
   });
+  document.addEventListener('DOMContentLoaded', function () {
+  var welcomeModal = new bootstrap.Modal(document.getElementById('welcomeModal'));
+  // Mostrar modal al inicio
+  welcomeModal.show();
+
+  document.getElementById('btnIngresar').addEventListener('click', function () {
+    welcomeModal.hide();
+  });
+
+  // Nuevo: volver a mostrar el modal de bienvenida
+  document.getElementById('btnVolverBienvenida').addEventListener('click', function () {
+    welcomeModal.show();
+  });
+});
+
 </script>
 <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
@@ -387,8 +384,13 @@
       isPlaying = false;
     });
   </script>
-  <script src="video-control.js"></script>
-  <script src="loader.js"></script>
+  <script>
+    document.getElementById('btnPlayPause').style.display = 'block';
+    document.getElementById('btnVolverBienvenida').style.display = 'block';
+
+  </script>
+  <script src="video-control.js" defer></script>
+  <script src="loader.js" defer></script>
 
 </body>
 </html>
