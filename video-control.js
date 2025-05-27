@@ -35,8 +35,8 @@
   if (!musica) return;
 
   if (event.data === YT.PlayerState.PLAYING) {
-    player.setVolume(0); // Baja el volumen del video al 30%
-    // Pausa el audio cuando el video se reproduce
+          player.mute(); // Silencia el video al cargar
+   //  // Pausa el audio cuando el video se reproduce
   //   if (!musica.paused) musica.pause();
   // } else if (event.data === YT.PlayerState.PAUSED || event.data === YT.PlayerState.ENDED) {
   //   // Reproduce el audio cuando el video se pausa o termina
