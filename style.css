@@ -302,6 +302,7 @@ header img {
 /* Media query para pantallas pequeñas */
 @media (max-width: 600px) {
   .nombre-text-personaliz {
+    
     font-size: 2.8rem;    /* Tamaño reducido para móviles */
   }
 }
@@ -312,9 +313,9 @@ header img {
 
 .gorro-img {
   position: absolute;
-  left: -70px;     /* ajustá para que quede sobre la E */
-  top: -70px;  /* ajustá para que quede arriba del texto */
-  height: 120px;
+  left: -55px;     /* ajustá para que quede sobre la E */
+  top: -45px;  /* ajustá para que quede arriba del texto */
+  height:80px;
   width: auto;
   filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.8));
 }
@@ -483,7 +484,7 @@ header img {
 }
 
 .modal-custom-content {
-  background-color:#2c7e87c0;
+  background-color:#1b6b74e1;
   color: white;
   text-align: center;
   padding: 4rem 1rem 2rem; /* más padding abajo para espacio para el botón */
@@ -662,3 +663,11 @@ img.responsive-gif {
   justify-content: center;
   height: 100%;         /* Asegura que el botón ocupe todo el espacio del contenedor */
 }
+/* Cuando el modal está abierto, aplica blur al contenido */
+.blur-bg {
+  filter: blur(30px) brightness(0.5);
+  pointer-events: none;
+  user-select: none;
+  transition: filter 0.3s ease;
+}
+
