@@ -48,14 +48,15 @@ header {
   max-width: 800px;
   margin: 0 auto;
   border-radius: 0 0 15px 15px; /* bordes redondeados solo abajo */
+  
 }
 
 
 .custom-hr {
   border: none;
   border-bottom: 2px solid #000; /* línea negra */
-  width: 200px;                  /* ancho de la línea */
-  margin: 0 auto 1rem auto;      /* centrado y margen inferior */
+  width: 10px;                  /* ancho de la línea */
+  margin: 0 auto 0.2rem auto;      /* centrado y margen inferior */
 }
 .resaltado {
   background-color:#6bb3b9; /* color coral suave de la paleta */
@@ -253,7 +254,7 @@ header img {
   padding-left: 1.5rem;  /* Ajustá padding para que quede lindo */
   padding-right: 1.5rem;
   background-color:transarent; /*transparent / Sin fondo */
-  color: rgb(41, 40, 40);                /* Color del texto (gris oscuro Bootstrap) */
+  color: #1b6b74;                /* Color del texto (gris oscuro Bootstrap) */
   border-left: none !important;
   border-right: none !important;
   border-top: none !important;;    /* Línea arriba con color del texto */
@@ -267,7 +268,7 @@ header img {
 .btn1:hover, 
 .btn1:focus {
  background-color: transparent; /* transparent --> Sin fondo */
-  color: white;                 /* Color texto al pasar mouse */
+  color: #2c3e50;                 /* Color texto al pasar mouse */
   box-shadow: none;              /* Sin sombra */
   border-left: none !important;
   border-right: none !important;
@@ -287,13 +288,16 @@ header img {
 }
 
 .nombre-text-personaliz {
+  position: relative;
   font-family: "Bebas Neue", sans-serif;
-  font-size: 5rem;         /* Puedes ajustar el tamaño */
-  font-weight: 400;          /* Great Vibes solo tiene un peso */
+  font-size: 4rem;         /* Puedes ajustar el tamaño */
+  font-weight: 700; 
   /*color: #181717;            Un color elegante, puedes cambiarlo*/
-  letter-spacing: 0.04em;
+  letter-spacing: 0.06em;
   display: inline-block;
   vertical-align: middle;
+  margin-top:0;
+  margin-bottom: 0;
 }
 /* Media query para pantallas pequeñas */
 @media (max-width: 600px) {
@@ -301,6 +305,20 @@ header img {
     font-size: 2.8rem;    /* Tamaño reducido para móviles */
   }
 }
+.text-with-gorro {
+  position: relative;
+  display: inline-block;
+}
+
+.gorro-img {
+  position: absolute;
+  left: -70px;     /* ajustá para que quede sobre la E */
+  top: -70px;  /* ajustá para que quede arriba del texto */
+  height: 120px;
+  width: auto;
+  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.8));
+}
+
 
 
 
@@ -463,6 +481,60 @@ header img {
     width: 100%;
   }
 }
+
+.modal-custom-content {
+  background-color:#2c7e87c0;
+  color: white;
+  text-align: center;
+  padding: 4rem 1rem 2rem; /* más padding abajo para espacio para el botón */
+  border-radius: 10px;
+  position: relative;
+  max-width: 100vh;   /* menos ancho */
+  min-height: 80%;  /* más alto */
+  margin: 0 auto;     /* centrar horizontal */
+}
+
+.modal-custom-content p {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.modal-custom-content a#googleCalendarLink {
+  display: inline-block;
+  margin-bottom: 2rem;
+  color: #fcfbfb;
+  font-size: 1.1rem;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.modal-custom-content .modal-footer {
+  position: absolute;
+  bottom: -35px; /* botón justo fuera del cuadro */
+  left: 50%;
+  transform: translateX(-50%);
+  background: transparent;
+  padding: 0;
+  margin: 0;
+  width: auto;
+}
+
+.modal-custom-content .modal-footer button.btn1 {
+  padding: 0.5rem 2rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: #fff;
+  color: #2c7e87;
+  border: none;
+  box-shadow: 0 4px 8px rgba(44, 126, 135, 0.4);
+  transition: background-color 0.3s ease;
+}
+
+.modal-custom-content .modal-footer button.btn1:hover {
+  background-color: #e6f0f1;
+}
+
 
 
 /* Ajuste para pantallas pequeñas */

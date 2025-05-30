@@ -34,7 +34,7 @@
   <br>
   <br>
   <p class="text center fs-5"><strong style="color:  #0e424b;" >www.teinvitoa.com.ar</strong></p>
-  <p class="mt-3">Cargando invitación...Aguarda un Momento</p>
+  <p class="mt-3">Cargando invitación...</p>
   </div>
 
 
@@ -64,35 +64,44 @@
 
 
 <!-- Modal de bienvenida -->
-<div class="modal fade show" id="welcomeModal" tabindex="-1" aria-labelledby="welcomeModalLabel" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
-  <div class="modal-dialog modal-fullscreen">
-    <div class="modal-content text-white" style="background: linear-gradient(to right, #00000066, #1a1a1a66), url('assets/hero-bg.webp') center/cover no-repeat;
-">
-  <div class="modal-body d-flex flex-column justify-content-between align-items-center text-center p-4" style="height: 300px;"> 
-  <div>
-    <h4 class="fw-bold" style="font-size: 1.8rem; padding-top: 10px;">EGRESADOS 2024</h4>
-    <p class="fs-6 mb-0">INST. LOS LAPACHOS</p>
-  </div>
+<div class="modal fade show" id="welcomeModal" tabindex="-1" aria-labelledby="welcomeModalLabel" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false" style="display: block;">
+  <div class="modal-dialog modal-dialog-centered modal-md">
+    <div class="modal-content text-white" style="background: #fcfbfb;">
+      <div class="modal-body p-4 text-center d-flex flex-column align-items-center">
+        
+        <!-- Imagen de bienvenida -->
+        <img src="assets/diplomagorroestrellas.webp" alt="Imagen de bienvenida" class="img-fluid mb-4" style="max-height: 250px; border-radius: 12px; object-fit: cover;">
 
-  <button type="button" id="btnIngresar" class="btn px-4 py-2 fs-5" style="margin-bottom: 10px;">
-    Ingresar <i class="bi bi-box-arrow-right"></i>
-  </button>
-</div>
- </div>
+        <!-- Texto -->
+        <h4 class="fw-bold mb-1" style="color: #0e424b;">EGRESADOS 2024</h4>
+        <p class="fs-6 mb-4" style="color: #0e424b;">INST. LOS LAPACHOS</p>
+
+        <!-- Botón para ingresar -->
+        <button type="button" id="btnIngresar" class="btn btn-primary px-4 py-2 fs-5">
+          Ingresar <i class="bi bi-box-arrow-right"></i>
+        </button>
+      </div>
+    </div>
   </div>
 </div>
+
 
 <!-- Header con foto y nombre -->
 <header class="hero-container">
   <img src="assets/hero-bg.webp" class="hero-img" alt="header" loading="lazy">
   <div class="hero-text-container">
-    <h1 class="nombre-text-personaliz">Egresados 2024</h1>
-    <p class="fs-6 fs-lg-3 fst-italic text-center">
+   <h1 class="nombre-text-personaliz">
+  <span class="text-with-gorro">
+    Egresados 2024
+    <img src="resources/gorro.png" alt="gorro egresado" loading="lazy" class="gorro-img" />
+  </span>
+</h1>
+    <p class="fs-5 fs-lg-4 fst-italic text-center">
       <strong>INSTITUTO EDUCATIVO LOS LAPACHOS</strong>
     </p>
   </div>
 </header>
-
+<hr class="custom-hr"/>
 
 <!-- Cuenta regresiva -->
 <section class=" text-center w-100 mb-3" style="background-color:#19717a; color: white;">
@@ -152,40 +161,46 @@
 <div class="botones-wrapper">
 
    <!-- Botón para agregar al calendario -->
-<button id="openModalGoogleCalendarActo" class="btn btn-custom m-2">
+<button id="openModalGoogleCalendarActo" class="btn1 m-2">
   <i class="bi bi-calendar-check"></i> Agendar en Google Calendar
 </button>
 
  <!-- Botón para ver ubicación -->
- <button id="openModal" class="btn btn-custom m-2">
+ <button id="openModal" class="btn1 m-2">
   <i class="bi bi-geo-alt-fill"></i> Ver Ubicación
 </button>
 </div>
 </section>
 <!-- Modal Google Calendar -->
-<div id="modalGoogleCalendar" class="modal" style="display:none; position: fixed; z-index: 9999; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.6);">
+  <div id="modalGoogleCalendar" class="modal" style="display:none; position: fixed; z-index: 9999; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.6);">
   <div class="modal-content" style="background-color: #fff; margin: 10% auto; padding: 20px; width: 90%; max-width: 600px; border-radius: 15px; position: relative;">
-    <span id="closeModalGoogleCalendar" style="position: absolute; top: 10px; right: 15px; font-size: 24px; cursor: pointer;">&times;</span>
-    
-    <h5 class="mb-3 text-center">Agregar al Calendario</h5>
-     <p class="fs-5 text-center">Acto Colacion Instituto Los Lapachos | 2024</p>
-    <p class="fs-5 text-center">17 Diciembre</p>
-    <p class="fs-5 text-center">19:00hs</p>
-    <a id="googleCalendarLink" href="#" target="_blank" rel="noopener noreferrer" class="text-center">
-      Agendar
-    </a>    <div class="modal-footer justify-content-center mt-3">
-      <button type="button" class="btn btn-custom" id="closeModalFooterGoogleCalendar">
-        Cerrar
-      </button>
-    </div>
+    <span id="closeModalGoogleCalendar" style="position: absolute; top: 10px; right: 15px; font-size: 24px; cursor: pointer;">&times;</span>    
+    <div class="modal-custom-content">
+   <!-- <h5 class="mb-4 fw-bold text-secondary">Agregar al Calendario</h5> -->
+
+  <p>Acto Colación Instituto Los Lapachos | 2024</p>
+  <hr>
+  <p >Dia: 17 Diciembre</p>
+  <p >Hora: 19:00 hs</p>
+  <p>Lugar: Establecimiento Escolar</p>
+  <hr>
+  <a id="googleCalendarLink" href="#" target="_blank" rel="noopener noreferrer" class="btn1 m-2" ><i class="bi bi-calendar-check"></i> Agendar en Google Calendar</a>
+  <div class="modal-footer">
+    <button type="button" class="btn1" id="closeModalFooterGoogleCalendar">
+      Cerrar
+    </button>
   </div>
 </div>
+</div>
+</div>
+</section>
+
 <!-- Modal Ubicación -->
 <div id="modalUbicacion" class="modal" style="display:none; position: fixed; z-index: 9999; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.6);">
   <div class="modal-content" style="background-color: #fff; margin: 10% auto; padding: 20px; width: 90%; max-width: 600px; border-radius: 15px; position: relative;">
     <span id="closeModal" style="position: absolute; top: 10px; right: 15px; font-size: 24px; cursor: pointer;">&times;</span>
     
-    <h5 class="mb-3">Ubicación del Acto</h5>
+    <p class="mb-3">Ubicación del Acto</p>
    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2436.9618791142566!2d-54.6192545!3d-26.019968299999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94f702b08c8036f9%3A0x5743adcd2020e778!2sEscuela%20Instituto%20Educativo%20Los%20Lapachos!5e1!3m2!1ses!2sar!4v1748384223588!5m2!1ses!2sar" 
       width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     
@@ -193,7 +208,7 @@
   
     <!-- Pie del modal con botón Cerrar -->
       <div class="modal-footer justify-content-center">
-        <button type="button" class="btn btn-custom" id="closeModalFooter" data-bs-dismiss="modal">
+        <button type="button" class="btn1" id="closeModalFooter" data-bs-dismiss="modal">
           Cerrar
         </button>
       </div></div>
@@ -251,12 +266,12 @@
   </p>
 <div class="botones-wrapper">
   <!-- Botón para agregar al calendario -->
-  <button id="openModalGoogleCalendarFiesta" class="btn btn-custom m-2">
+  <button id="openModalGoogleCalendarFiesta" class="btn1 m-2">
   <i class="bi bi-calendar-check"></i> Agendar en Google Calendar
 </button>
 
  <!-- Botón para ver ubicación -->
- <button id="openModalFiesta" class="btn btn-custom m-2">
+ <button id="openModalFiesta" class="btn1 m-2">
   <i class="bi bi-geo-alt-fill"></i> Ver Ubicación
 </button>
 </div>
@@ -274,7 +289,7 @@
       Agendar
     </a>
     <div class="modal-footer justify-content-center mt-3">
-      <button type="button" class="btn btn-custom" id="closeModalFooterGoogleCalendar">
+      <button type="button" class="btn1" id="closeModalFooterGoogleCalendar">
         Cerrar
       </button>
     </div>
@@ -293,7 +308,7 @@
   
     <!-- Pie del modal con botón Cerrar -->
       <div class="modal-footer justify-content-center">
-        <button type="button" class="btn btn-custom" id="closeModalFooterFiesta" data-bs-dismiss="modal">
+        <button type="button" class="btn1" id="closeModalFooterFiesta" data-bs-dismiss="modal">
           Cerrar
         </button>
       </div></div>
